@@ -17,7 +17,7 @@ const titleCased = (string) => {
     console.log(words);
     const capWords = words.map( words => words.charAt().toUpperCase() + words.slice(1) );
     console.log(capWords);
-    const finishedString = capWords.join(` `)
+    const finishedString = capWords.join()
     console.log(finishedString)
     return finishedString;
   });

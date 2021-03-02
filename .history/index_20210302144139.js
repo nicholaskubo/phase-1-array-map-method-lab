@@ -14,15 +14,12 @@ const tutorials = [
 const titleCased = (string) => {
   return tutorials.map( string => {
     const words = string.split (` `);
-    console.log(words);
-    const capWords = words.map( words => words.charAt().toUpperCase() + words.slice(1) );
-    console.log(capWords);
+    const capWords = words.map( token => token.charAt(0).toUpperCase() + token.slice(1) );
     const finishedString = capWords.join(` `)
-    console.log(finishedString)
     return finishedString;
   });
 }
 
 
-console.log(titleCased())
+console.log(titleCased(tutorials))
 
